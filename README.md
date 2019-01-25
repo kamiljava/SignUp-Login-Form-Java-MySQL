@@ -1,4 +1,4 @@
-# SignUp
+# SignUp/Login Form
 Hello,<br /> 
 It is a simple SignUp/Login program. 
 You can create your account. The username and password will be saved in the <b><u>MySQL</u></b> database.<br /> You will be able to log in using your data.
