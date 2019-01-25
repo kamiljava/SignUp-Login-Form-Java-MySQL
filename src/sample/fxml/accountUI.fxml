@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AccountController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="root" prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <Pane fx:id="login" layoutX="100.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0">
+                    <children>
+                        <TextField fx:id="txtUser" layoutX="118.0" layoutY="158.0" prefHeight="48.0" prefWidth="364.0" promptText="USERNAME" />
+                        <Text layoutX="118.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Enter Your Password" wrappingWidth="158.67090374231339">
+                            <font>
+                                <Font name="Segoe UI Black Italic" size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="48.0" fitWidth="47.0" layoutX="71.0" layoutY="270.0">
+                            <image>
+                                <Image url="@../resources/password.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="118.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Enter Your Username" wrappingWidth="158.6708984375">
+                            <font>
+                                <Font name="Segoe UI Black Italic" size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fx:id="loginImage" fitHeight="48.0" fitWidth="47.0" layoutX="71.0" layoutY="158.0">
+                            <image>
+                                <Image url="@../resources/login.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnLogin" layoutX="204.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#mouseLogin" prefHeight="48.0" prefWidth="206.0" text="Login">
+                            <font>
+                                <Font name="Segoe UI Black Italic" size="22.0" />
+                            </font>
+                        </Button>
+                        <Text fill="#dcca8a" layoutX="154.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Account" wrappingWidth="305.6708984375">
+                            <font>
+                                <Font name="Segoe UI Black Italic" size="51.0" />
+                            </font>
+                        </Text>
+                        <PasswordField fx:id="txtPassword" layoutX="118.0" layoutY="270.0" prefHeight="48.0" prefWidth="364.0" promptText="PASSWORD" />
+                    </children>
+                </Pane>
+                <Text fx:id="title" layoutX="298.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="User Login" wrappingWidth="241.6708984375">
+                    <font>
+                        <Font name="Segoe UI Black Italic" size="41.0" />
+                    </font>
+                </Text>
+            <Button fx:id="btnSignUp" layoutX="346.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#mouseSignUp" prefHeight="36.0" prefWidth="117.0" text="Sign Up">
+               <font>
+                  <Font name="Segoe UI Black Italic" size="15.0" />
+               </font>
+            </Button>
+            <Text layoutX="332.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Don't have a account ?">
+               <font>
+                  <Font name="Segoe UI Black Italic" size="13.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
